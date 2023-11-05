@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 C-1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap{
+            margin: auto;
+            margin-left: 0;
+            height: 650px;
+            width: 1000px;
+            background-color: aqua;
+            display: flex;
+        }
+        .sideBar{
+            flex: 2;
+            background-color: red;
+        }
+        .main{
+            flex: 8;
+            background-color: brown;
+        }
+        .main .slider{
+            background-color: rgb(125, 114, 114);
+            height: 350px;
+        }
+        .main .contents{
+            background-color: rgb(18, 9, 9);
+            height: 200px;
+            display: flex;
+        } 
+        .main .contents #contentsA{
+            background-color: rgb(196, 234, 224);
+            height: 100%;
+            flex: 1;
+        } 
+        .main .contents #contentsB{
+            background-color: rgb(12, 39, 32);
+            height: 100%;
+            flex: 1;
+        } 
+        .main .contents #contentsC{
+            background-color: rgb(218, 234, 196);
+            height: 100%;
+            flex: 1;
+        } 
+        .main .footer{
+            background-color: rgb(210, 7, 7);
+            height: 100px;
+            display: flex;
+        } 
+        .main .footer{
+            background-color: rgb(210, 7, 7);
+            height: 100px;
+            display: flex;
+        }
+        .main .footer{
+            background-color: rgb(210, 7, 7);
+            height: 100px;
+            display: flex;
+        }
+        #logo{
+            flex: 2;
+            background-color: rgb(218, 234, 196);
+        }
+        #footerRgiht{
+            flex: 8;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        #footerRgiht #bottomeMenu{
+            flex: 8;
+            background-color: rgb(196, 197, 234);
+        }
+        #footerRgiht #copyright{
+            flex: 8;
+            background-color: rgb(39, 40, 80);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sideBar"></div>
+        <div class="main">
+            <div class="slider"></div>
+            <div class="contents">
+                <div id="contentsA"></div>
+                <div id="contentsB"></div>
+                <div id="contentsC"></div>
+            </div>
+            <div class="footer">
+                <div id="logo"></div>
+                <div id="footerRgiht">
+                    <div id="bottomeMenu"></div>
+                    <div id="copyright"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

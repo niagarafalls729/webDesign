@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{ 
+            width: 1200px;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0; 
+        }
+        .top{
+            width: 100%;    
+            height: 100px;
+            display: flex;
+        }
+        .top #logo{
+            width: 20%;
+            height: 100%;
+            background-color: blanchedalmond;
+        }
+        .top #menu{
+            width: 80%;
+            height: 100%;
+            background-color: chocolate;
+        }
+        .slider{
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+        }
+        .contents{
+            height: 200px;
+            width: 100%;
+            display: flex;
+        }
+        .contents #notice{
+            flex: 1;
+            height: 100%;
+            background-color: lemonchiffon; 
+        }
+        .contents #img{
+            flex: 1;
+            height: 100%;
+            background-color: orange; 
+        }
+        .contents #link{
+            flex: 1;
+            height: 100%;
+            background-color: rgb(44, 42, 29); 
+        }
+        .footer{
+            width: 100%;    
+            height: 100px;
+            display: flex;
+        }
+        .footer #left{
+            flex: 7;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer #left #bottomMenu{
+            flex: 1;
+            height: 100%;
+            background-color: teal;
+        }
+        .footer #left #copyright{
+            flex: 1;
+            height: 100%;
+            background-color:  lightseagreen
+        }
+        .footer #familySite{
+            flex: 3;
+            height: 100%;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div id="logo"></div>
+            <div id="menu"></div>
+        </div>
+        <div class="slider"> 
+        </div>
+        <div class="contents">
+            <div id="notice"></div>
+            <div id="img"></div>
+            <div id="link"></div>
+        </div>
+        <div class="footer">
+            <div id="left">
+                <div id="bottomMenu"></div>
+                <div id="copyright"></div>
+            </div>
+            <div id="familySite"></div>
+        </div>
+    </div>
+</body>
+</html>
