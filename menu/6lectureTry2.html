@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        #wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #aside {
+            width: 200px;
+        }
+        #aside h1 {
+            width: 100%;
+            height: 100px;
+            background-color: #efefef;
+        }
+        #aside nav {
+            width: 100%;
+            height: 700px;
+            background-color: #e3e3e3;
+        }
+        #main {
+            width: calc(100% - 200px);
+        }
+        #slider {
+            width: 100%;
+            height: 400px;
+            background-color: #d9d9d9;
+        }
+        #link {
+            width: 100%;
+            height: 150px;
+            background-color: #d1d1d1;
+        }
+        #contents {
+            width: 100%;
+            display: flex;
+        }
+        #contents .content1 {
+            width: 50%;
+            height: 250px;
+            background-color: #c7c7c7;
+        }
+        #contents .content2 {
+            width: 50%;
+            height: 250px;
+            background-color: #bcbcbc;
+        }
+        #footer {
+            width: 100%;
+            display: flex;
+        }
+        #footer .footer1 {
+            width: 20%;
+            height: 120px;
+            background-color: #b1b1b1;
+        }
+        #footer .footer2 {
+            width: 60%;
+        }
+        #footer .footer2 .footer2-1 {
+            width: 100%;
+            height: 60px;
+            background-color: #a3a3a3;
+        }
+        #footer .footer2 .footer2-2 {
+            width: 100%;
+            height: 60px;
+            background-color: #9d9d9d;
+        }
+        #footer .footer3 {
+            width: 20%;
+            height: 120px;
+            background-color: #929292;
+        } 
+        .menu{}
+        .menu > ul {}
+        .menu > ul > li {
+            position: relative;
+        }
+        .menu > ul > li > a {
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            background-color: #929292;
+        }
+        .menu > ul > li > a:hover {
+            background-color: #b1b1b1;
+        }
+        .menu > ul > li > ul {
+            display: flex; 
+            width: 450px;
+            top: 0px;
+            left: 200px;
+            position: absolute;
+        }
+        .menu > ul > li > ul > li {
+     
+            display: none;
+         
+        }
+        .menu > ul > li > ul > li > a{
+            
+            display: inline-block;
+            text-align: center;
+            padding: 15px 20px; 
+            /* background-color: #efefef; */
+            position: relative;
+            z-index: 9;
+        }
+        .menu > ul > li > ul > li > a:hover{
+            background-color: #d9d9d9;
+        }
+        .menu_add{
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 100%;
+            height: 205px;
+            background-color: #929292;
+            z-index: 8;
+            transition: all 300ms;
+        }
+        /* .menu::after {
+            content: '';
+            width: 0%;
+            height: 205px;
+            background-color: #929292;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+            z-index: 1;
+            transition: all 300ms;
+        }
+        .menu.on::after {
+            width: 100%;
+        }  */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1></h1>
+            
+            <div class="menu">
+                <div class="menu_add">
+
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="submenu">
+                            <li><a href="#">소메뉴1-1</a></li>
+                            <li><a href="#">소메뉴1-2</a></li>
+                            <li><a href="#">소메뉴1-3</a></li>
+                            <li><a href="#">소메뉴1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="submenu">
+                            <li><a href="#">소메뉴2-1</a></li>
+                            <li><a href="#">소메뉴2-2</a></li>
+                            <li><a href="#">소메뉴2-3</a></li>
+                            <li><a href="#">소메뉴2-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="submenu">
+                            <li><a href="#">소메뉴3-1</a></li>
+                            <li><a href="#">소메뉴3-2</a></li>
+                            <li><a href="#">소메뉴3-3</a></li>
+                            <li><a href="#">소메뉴3-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="submenu">
+                            <li><a href="#">소메뉴4-1</a></li>
+                            <li><a href="#">소메뉴4-2</a></li>
+                            <li><a href="#">소메뉴4-3</a></li>
+                            <li><a href="#">소메뉴4-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- //aside -->
+
+        <main id="main">
+            <article id="slider"></article>
+            <article id="link"></article>
+            <section id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+            </section>
+        </main>
+        <!-- //main -->
+
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.menu > ul > li').mouseover(function(){
+                $('.submenu > li').stop().fadeIn();
+                // $(".menu").addClass("on");   
+                $('.menu_add').stop().fadeIn();
+            })
+            $('.menu > ul > li').mouseout(function(){ 
+                $('.submenu > li').stop().slideUp();
+                // $(".menu").removeClass("on");   
+                $('.menu_add').stop().slideUp();
+            })
+        })
+    </script>
+    <!-- //wrap -->
+</body> 
+</html>
