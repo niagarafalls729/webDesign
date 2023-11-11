@@ -66,18 +66,17 @@
 #slider {
     overflow: hidden;
 }
-.sliderWrap .slider {
+.sliderWrap .slider{
     position: relative;
 }
-.sliderWrap .slider img {
+.sliderWrap .slider img{
     vertical-align: top;
 }
-.sliderWrap .slider span {
+.sliderWrap .slider span{
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0,0,0,0.3);
-    color: #fff;
-    padding: 10px 20px;
+    left: 50%;
+    background-color: #9d9d9dcd;
+    color: white;
+    transform: translate(-50%,-50%);
 }
