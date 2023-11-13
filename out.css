@@ -63,20 +63,41 @@
     height: 100px;
     background-color: #9d9d9d;
 }
-#slider {
-    overflow: hidden;
-}
-.sliderWrap .slider{
+/* 이건 s-1 유형 */
+/* .sliderWrap{
     position: relative;
 }
-.sliderWrap .slider img{
-    vertical-align: top;
+.sliderWrap .slider:first-child{
+    display: block;
 }
-.sliderWrap .slider span{
+.sliderWrap .slider{
+    display: none;
     position: absolute;
-    top: 50%;
+    top: 0;
+    left: 0;
+}
+.slider span{
+    top:50%;
+    position: absolute;
+    background-color: #b1b1b1b5;
+    padding: 10px;
     left: 50%;
-    background-color: #9d9d9dcd;
-    color: white;
+    transform: translate(-50%,-50%);
+}
+ */
+
+ .sliderWrap {
+    display: flex;
+    width: 1200px;
+ }
+.slider{
+    position: relative;;
+}
+ .slider span{
+    top:50%;
+    position: absolute;
+    background-color: #b1b1b1b5;
+    padding: 10px;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
