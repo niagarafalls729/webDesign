@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    display: flex;
+}
+#header .logo {
+    width: 20%;
+    height: 100px;
+    background-color: #efefef;
+}
+#header .menu {
+    width: 80%;
+    background-color: #e3e3e3;
+}
+#slider {
+    width: 100%;
+    height: 300px;
+    background-color: #d9d9d9;
+}
+#contents {
+    width: 100%;
+    display: flex;
+}
+#contents .content1 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #d1d1d1;
+}
+#contents .content2 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #c7c7c7;
+}
+#contents .content3 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #bcbcbc;
+}
+#footer {
+    width: 100%;
+    display: flex;
+}
+#footer .footer1 {
+    width: 20%;
+    height: 800px;
+    background-color: #b1b1b1;
+}
+#footer .footer2 {
+    width: 60%;
+    height: 800px;
+    background-color: #a3a3a3;
+}
+#footer .footer3 {
+    width: 20%;
+    height: 800px;
+    background-color: #9d9d9d;
+} 
+
+
+.menu > ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+}
+.menu > ul > li {
+    position: relative;
+}
+.menu > ul > li > a{
+    display: inline-block;
+    padding: 10px 50px;
+    text-align: center;
+    background-color: #9d9d9d;
+}
+.menu > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+.menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.menu > ul > li > ul > li > a{
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; 
+    background-color: #9d9d9d;
+}
+.menu > ul > li > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+
+
+
+.menu2{
+    position: absolute;
+    top: 30px;
+}
+
+
+.menu2 > ul {
+    display: flex;
+
+} 
+.menu2 > ul > li > a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #9d9d9d;
+}
+.menu2 > ul > li > a:hover {
+    background-color: #b1b1b1;
+}
+.menu2 > ul > li > ul {
+    display: none;
+} 
+.menu2 > ul > li > ul > li > a {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    background-color: #9d9d9d;
+    box-sizing: border-box;
+}
+.menu2 > ul > li > ul > li > a:hover {
+
+    background-color: #b1b1b1;
+}
+
+
+.menu3 {
+    position: absolute;
+    top: 100px;
+}
+.menu3 > ul {
+    text-align: center;
+    display: flex;
+}
+.menu3 > ul > li {
+    position: relative;
+}
+.menu3 > ul > li a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #b1b1b1;
+}
+.menu3 > ul > li a:hover {
+
+    background-color: #9d9d9d;
+}
+.menu3 > ul > li > ul {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    display: none;
+} 
+.menu3 > ul > li > ul > li > a{
+    width: 100%;
+    display: inline-block;
+    padding: 10px; 
+    box-sizing: border-box;
+    background-color: #b1b1b100; 
+}
+.menu3 > ul > li > ul > li > a:hover{
+    background-color: #9d9d9d;
+}
+.back{
+    position: absolute;
+    width: 1200px;
+    height: 0px; 
+    z-index: 1;
+    transition: all,600ms;
+}
+.go{
+    height: 167px;
+    background-color: #b1b1b1;
+}  
+
+
+
+.menu4{ position: absolute; top: 200px;}
+.menu4 > ul {
+    text-align: center;
+} 
+.menu4 > ul > li > a{
+    display: block;
+    padding: 10px 50px;
+    background-color: #9d9d9d;
+}
+.menu4 > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+.menu4 > ul > li > ul {
+    display: none;
+} 
+.menu4 > ul > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: #9d9d9d;
+}
+.menu4 > ul > li > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+
+.menu5{ position: absolute; top: 400px;}
+
+.menu5 > ul {
+    text-align: center;
+}
+.menu5 > ul > li {
+    position: relative;
+}
+.menu5 > ul > li > a{
+    display: block;
+    padding: 10px 50px;
+    width: 100px;
+    background-color: #9d9d9d;
+}
+.menu5 > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+.menu5 > ul > li > ul {
+  top: 0px;
+  width: 100%;
+  left: 200px;
+  position: absolute;
+  display: none;
+}
+.menu5 > ul > li > ul > li {
+    width: 100%;
+}
+.menu5 > ul > li > ul > li > a{
+    display: block;
+    width: 180px;
+    background-color: #636262;
+    padding: 10px;
+   
+}
+.menu5 > ul > li > ul > li > a:hover{
+    background-color: #b1b1b1;
+}
+
+
+.menu6{position: absolute; left: 400px; top:200px}
+.menu6 > ul {
+    text-align: center;
+}
+.menu6 > ul >li{
+    position: relative;
+}
+.menu6 > ul >li > a{
+    width: 100px;
+    display: block;
+    padding: 10px 50px;
+    background-color: #9d9d9d;
+}
+.menu6 > ul >li > a:hover{
+    background-color: #b1b1b1;
+}
+.menu6 > ul >li > ul {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 200px; 
+    z-index: 9;
+}
+.menu6 > ul >li > ul > li{
+    display: none;
+}
+.menu6 > ul >li > ul > li >a {
+    width: 180px;
+    display: block;
+    padding: 10px;
+    /* background-color: #636262; */
+}
+.menu6 > ul >li > ul > li >a:hover {
+    background-color: #b1b1b1;
+}
+.back2{
+    position: absolute;
+    width: 0px;
+    height: 168px;
+    background-color: #636262;
+    top: 0;
+    left: 200px;
+    transition: all,600ms;
+}
+.go{
+    width: 100vh;
+    z-index: 1;
+}
