@@ -1,0 +1,140 @@
+* {
+    padding:0px;   
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+
+.wrap{
+    background-color: aliceblue;
+    width: 100%;
+
+} 
+.top{
+    margin: auto;
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(133, 83, 240);
+    display: flex;
+}
+.logo{
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.menu{
+    flex: 4;
+} 
+.menu > ul{ 
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    text-align: center;
+}
+.menu > ul > li { 
+    position: relative;
+}
+.menu > ul > li > a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: blueviolet;
+    color: white;
+ }
+.menu > ul > li > a:hover { 
+    background-color: rgb(21, 40, 240)
+}
+.menu > ul > li > ul {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: none;
+} 
+.menu > ul > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+
+}
+.menu > ul > li > ul > li > a:hover{
+    background-color: rgb(21, 40, 240)
+}
+
+.sliderWrap{
+    margin: auto;
+    width: 1200px;
+    height: 300px;
+    background-color: aqua; 
+    position: relative;
+}
+.slider{
+    position: absolute; 
+    display: none;
+}
+.slider > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 10px;
+}
+.contents {
+    margin: auto;
+    width: 1200px;
+    height: 200px;
+    background-color: rgb(88, 102, 102);
+    display: flex;
+}
+.contents1{
+    flex: 1;
+    background-color: cornsilk;
+}
+.tabMenu{
+
+}
+.active > h2 > a{
+    color: red !important;
+}
+.tabMenu >ul{
+    display: flex;
+    padding: 10px;
+}
+.tabMenu >ul > li{
+    display: inline-block; 
+}
+.tabContents{
+    padding: 10px;
+
+}
+.tabContents >ul > li{
+    padding: 4px;
+    
+}
+.tabContents2{
+    display: none;
+}
+.contents2{
+    flex: 1;
+    background-color: wheat
+}
+.contents3{
+    flex: 1;
+    background-color: silver
+}
+.footer {
+    margin: auto;
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(134, 206, 206);
+}
