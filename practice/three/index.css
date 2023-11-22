@@ -77,7 +77,7 @@ a {
     background-color: #a1a0a0;
 }
 .sliderWrap{
-    overflow: hidden;
+    /* overflow: hidden; */
     width: calc(100% - 600px);
     height: 100%; 
     background-color: #bebcbc;
