@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #333333;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+} 
+li{
+    list-style: none;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: aliceblue;
+    display: flex;
+}
+
+.main > .logo {
+    width: 200px; 
+    height: 100%;
+}
+.main > .contents{
+    width: 400px;
+    height: 100%;
+    background-color: #a09f9f;
+}
+.main > .sliderWrap{
+    width: calc(100vw - 600px);
+    height: 100%;
+    background-color: #bbb7b7;
+    overflow: hidden;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: aqua;
+    display: flex;
+}
+.footer > .footLogo{
+    width: 200px;
+    background-color: #7a5e5e;
+    height: 100%;
+}
+.footer > .copy {
+    width: calc(100vw - 500px);
+    background-color: #b48a8a;
+    height: 100%;
+}
+.footer > .family {
+    width: 300px;
+    background-color: #daa7a7;
+    height: 100%;
+} 
+.logoImg{
+    background: url('../images/LOGO.png'); 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+.menu > ul {
+    padding: 5px;
+    
+}
+.menu > ul > li {
+    border: 1px solid black;
+    position: relative;
+    width: 189px;
+}
+.menu > ul > li > a {
+    background-color: rgb(80, 187, 66);
+    padding: 10px 50px;
+    display: block;
+    
+
+}
+.menu > ul > li > a:hover {
+    background-color: rgb(95, 224, 78);
+}
+.menu > ul > li > ul {
+    display: none;
+    border: 1px solid black;
+    position: absolute;
+    left: 189px;
+    top: -1px;
+} 
+.menu > ul > li > ul > li > a{
+    background-color: rgb(136, 231, 80);
+    width: 200px;
+    padding: 10px;
+    display: block;
+}
+.menu > ul > li > ul > li > a:hover{
+    background-color: rgb(63, 228, 41);
+}
+
+.sliderWrap >.sliders{
+    height: 100%;
+    width: 400%;
+    overflow: hidden; 
+    display: flex;
+}
+.sliderWrap >.sliders > .slider {
+    position: relative;
+}
+.sliderWrap >.sliders > .slider > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #b48a8a;
+    padding: 10px 50px;
+    color: white;
+}
+.sliderWrap >.sliders > .s1{
+    background: url('../images/slider01.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.sliderWrap >.sliders > .s2{
+    background: url('../images/slider02.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.sliderWrap >.sliders > .s3{
+    background: url('../images/slider03.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.banner{
+    display: flex;
+    padding: 10px;
+}
+
+.notice{
+    background-color: #b48a8a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.notice>h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.notice> ul > li {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black; 
+    padding: 10px;
+    display: flex;
+}
+.notice > ul >li:hover{
+    background-color: antiquewhite;
+}
+.notice > ul >li> a{
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+} 
+.notice > ul >li> span{
+    width: 30%;
+    text-align: right;
+}
+
+.gel{
+    background-color: #b48a8a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gel>h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gelWrap {
+    display: flex;
+}
+.gelWrap > div{
+    text-align: center;
+}
+
+.linkImg{
+    padding-top: 30px;
+    display: flex;
+    text-align: center;
+}
+.linkImg> div > img{
+    width: 80px;
+}
+.footLogo{
+    background: url('../images/LOGO.png'); 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120px;
+}
+.family{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.family > select{
+    width: 150px;
+    height: 50px;
+    
+}
+.footMenu {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+.footMenu > ul{
+    display: flex;
+} 
+.footMenu > ul > li > a{
+    padding: 5px;
+    display: block;
+    text-decoration: underline;
+    color: blue;
+    /* border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px; */
+}
+.footMenu > ul > li > a > span{
+    font-size: 20px;
+}
+.copyLight {
+    height: 50%;
+    width: 100%;
+}
+
+.pop{
+    display: none;
+    top: 50px;
+    left: 200px;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: #bbabab;
+    z-index: 2;
+    border: 1px solid black;
+}
+.pop>.popTitle{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(79, 159, 230);
+    position: relative;
+    font-size: 25px;
+}
+.popContents>button{
+    background-color: rgb(252, 247, 242);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 25px;
+}
