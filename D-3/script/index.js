@@ -1,31 +1,32 @@
 $(function(){
-    $('.menu > ul > li').mouseover(function(){
-        $(this).find('.submenu').stop().slideDown();
-    })
-    $('.menu > ul > li').mouseout(function(){
-        $(this).find('.submenu').stop().slideUp();
-    })
+     $('.menu >ul >li').mouseover(function(){
+        $('.menu >ul >li > ul > li').stop().fadeIn();
+        $('.menuBack').stop().slideDown();
+     })
+     $('.menu >ul >li').mouseout(function(){
+        $('.menu >ul >li > ul > li').stop().fadeOut();
+        $('.menuBack').stop().slideUp();
+     })
 
-   
-    $('.sliders').append($('.s1').clone(true));
-
-    let index=1;
-
-    setInterval(function(){
-        console.log("index",index,index*-100)
-        $('.sliders').animate({marginLeft: (index*-100) +'%'})
-        index++;
-        if(index ==4){
+     let index = 0;
+     setInterval(() => {
+        $('.slider').eq(index++).fadeOut();   // 0 1 2
+        $('.slider').eq(index).fadeIn();    // 1 2 3
+       
+        if(index == 3){
             index=0;
-            $('.sliders').animate({marginLeft:'0%'},0)
+            $('.slider').eq(index).fadeIn();   // 0 1 2
         }
-    },2000)
+     }, 2000);
 
-    $('#popup').click(function(){
-        $('.pop').show(); 
-    })
-    
-    $('.popContents > button').click(function(){
-        $('.pop').hide(); 
-    })
+
+     $('#noti').click(function(){
+        $('.gelCon').hide();
+        $('.notiCon').show();
+
+     })
+     $('#gel').click(function(){
+        $('.gelCon').show();
+        $('.notiCon').hide();
+     })
 })

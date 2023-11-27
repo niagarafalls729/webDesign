@@ -1,1 +1,258 @@
-@charset 'utf-8';
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+li{
+    list-style: none;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+   
+}
+.main{
+    width: 100%;
+    height: 850px;   
+    background-color: aliceblue;
+    display: flex;
+}
+.footer{
+    width: 100%;
+    height: 120px;   
+    background-color: antiquewhite;
+}
+.logoMenu{
+    height: 100%;
+    width: 200px;
+    background-color: aqua;
+}
+.contents{
+    height: 100%;
+    width: calc(100vw - 200px);
+    background-color: beige;
+}
+.upLogo{
+    background-image: url('../images/LOGO.png');
+    width: 100%;
+    height: 200px; 
+    background-repeat: no-repeat;
+}
+.menu {
+    position: relative;
+} 
+.menu >ul >li{
+    position: relative;
+}
+.menu >ul >li > a{
+    background-color: bisque;
+    display: block;
+    padding: 10px 35px; 
+}
+.menu >ul >li > a:hover{
+    background-color: rgb(194, 191, 188);
+}
+.menu >ul >li > ul {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 200px;  
+    z-index: 11;
+}
+.menu >ul >li > ul > li {
+    display: none;
+    width: 200px; 
+}
+.menu >ul >li > ul > li > a{
+    /* background-color: rgb(143, 125, 104); */
+    display: block;
+    padding: 10px; 
+}
+.menu >ul >li > ul > li > a:hover{
+    background-color: rgb(194, 163, 133);
+}
+.menuBack{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background-color: rgb(143, 125, 104);
+    /* width: 0px; */
+    width: calc(100vh - 180px);
+    height: 165px; 
+    z-index: 10;
+    display: none;
+    
+}
+/* .menuBackOn{
+    /* width: calc(100vh - 180px); */
+} */
+.quickMenu > ul{ 
+     display: flex;
+     justify-content: center;
+}
+.quickMenu > ul > li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.sliderWrap{
+    height: 400px;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.sliderWrap > .slider> span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(21 48 49 / 48%);
+    color: white;
+    padding: 10px 50px;
+}
+.s1{
+    background: url('../images/slider01.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+
+}
+.s2{
+    background: url('../images/slider02.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+.s3{
+    background: url('../images/slider03.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+.banner{
+    width: 100px;
+    height: 380px;
+    background-color: #333333;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    text-align: center;
+
+}
+.b1> img{
+    background-image: url('../images/g1.png');
+    width: 100px;
+    height: 100px;
+}
+.b2> img{
+    background-image: url('../images/g2.png');
+    width: 100px;
+    height: 100px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    background-size: cover;
+}
+.b3 > img{
+    background-image: url('../images/g1.png');
+    width: 100px;
+    height: 100px;
+} 
+
+.realBanner{
+    
+    width: 100%;
+    height: 200px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+.bannerWrap{
+    margin-top: 10px;
+    width: 90%;
+    height: 170px;
+    
+    padding-left: 50px;
+    padding-right: 20px;
+    background-color: aliceblue;
+    border : 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannerI{
+    background: url('/img/banner.png');
+    width: 100px;
+    height: 100px;
+}
+.bannerTitle{
+    font-weight: bold;
+} 
+.arrow{
+    width: 100px;
+    height: 100px;  
+    border-top-width: 10px;
+    border-right-width: 10px; 
+    border-top-style: solid;
+    border-right-style: solid; 
+    border-top-color: black;
+    border-right-color: black; 
+    border-radius: 5px;
+    transform: rotate(45deg);
+    margin-right: 20px;
+}
+.noticeAndGel{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.menuWrap{
+    margin-top: 10px;
+    width: 90%;
+    height: 100%; 
+    padding-left: 50px;
+    padding-right: 20px;
+    background-color: aliceblue;
+    position: relative;
+}
+.menuGel{
+    
+    display: flex;
+}
+.menuGel > div {
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    text-align: center;  
+}
+#gel{   
+    background-color: aqua; 
+}
+.notiCon{
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    width: 90%;
+    height: 170px;
+    background-color: bisque;
+} 
+.gelCon{
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    width: 90%;
+    height: 170px;
+    background-color: aqua; 
+    display: none;
+}
